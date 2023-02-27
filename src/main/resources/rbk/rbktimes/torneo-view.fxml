@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="935.0" prefWidth="1087.0" spacing="15.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rbk.rbktimes.controllers.TorneoController">
+   <children>
+      <HBox alignment="CENTER" spacing="15.0">
+         <children>
+            <Label text="TORNEO">
+               <font>
+                  <Font name="SansSerif Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgs/torneo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox prefHeight="299.0" prefWidth="911.0" spacing="15.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="299.0" prefWidth="306.0" spacing="15.0">
+               <children>
+                  <ToggleButton fx:id="btnAVG" maxWidth="250.0" minHeight="35.0" minWidth="250.0" mnemonicParsing="false" onAction="#cambioAVG" prefHeight="35.0" prefWidth="250.0" selected="true" text="AVG 3">
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ToggleButton>
+                  <ComboBox fx:id="cmbConcursante" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" promptText="Concursante">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <ComboBox fx:id="cmbCategoria" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" promptText="Categoría">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <DatePicker fx:id="dtpFecha" maxHeight="35.0" maxWidth="250.0" minHeight="35.0" minWidth="250.0" prefHeight="35.0" prefWidth="250.0" promptText="Fecha de la sesión">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </DatePicker>
+                  <Button mnemonicParsing="false" onAction="#registrarAVG" prefWidth="250.0" text="Registrar AVG" textFill="#2832fa">
+                     <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="299.0" prefWidth="582.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label text="Solve 1">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSolve1" alignment="CENTER" prefHeight="35.0" prefWidth="150.0" promptText="01:34.523">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <RadioButton fx:id="btnSP1" mnemonicParsing="false" selected="true" text="Sin Penalizar">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnPlus1" mnemonicParsing="false" text="+2">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnDNF1" mnemonicParsing="false" text="DNF">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label text="Solve 2">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSolve2" alignment="CENTER" prefHeight="35.0" prefWidth="150.0" promptText="01:56.231">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <RadioButton fx:id="btnSP2" mnemonicParsing="false" selected="true" text="Sin Penalizar">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnPlus2" mnemonicParsing="false" text="+2">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnDNF2" mnemonicParsing="false" text="DNF">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label text="Solve 3">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSolve3" alignment="CENTER" prefHeight="35.0" prefWidth="150.0" promptText="02:12.879">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <RadioButton fx:id="btnSP3" mnemonicParsing="false" selected="true" text="Sin Penalizar">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnPlus3" mnemonicParsing="false" text="+2">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnDNF3" mnemonicParsing="false" text="DNF">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="paneSolve4" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label text="Solve 4">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSolve4" alignment="CENTER" prefHeight="35.0" prefWidth="150.0" promptText="00:54.999">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <RadioButton fx:id="btnSP4" mnemonicParsing="false" selected="true" text="Sin Penalizar">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnPlus4" mnemonicParsing="false" text="+2">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnDNF4" mnemonicParsing="false" text="DNF">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="paneSolve5" alignment="CENTER" focusTraversable="true" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label text="Solve 5">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSolve5" alignment="CENTER" prefHeight="35.0" prefWidth="150.0" promptText="00:13.658">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <RadioButton fx:id="btnSP5" mnemonicParsing="false" selected="true" text="Sin Penalizar">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnPlus5" mnemonicParsing="false" text="+2">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="btnDNF5" mnemonicParsing="false" text="DNF">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Separator prefWidth="200.0" />
+      <Button mnemonicParsing="false" onAction="#salirClick" prefWidth="500.0" text="Salir">
+         <font>
+            <Font name="SansSerif Regular" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
